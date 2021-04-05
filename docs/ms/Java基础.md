@@ -1,8 +1,44 @@
-## String、StringBuffer、StringBuilder的区别？       
+## String、StringBuffer、StringBuilder的区别？     
 
+### String、StringBuffer、StringBuilder的区别？   
+### String、StringBuffer、StringBuilder的区别？   
+#### String、StringBuffer、StringBuilder的区别？   
+##### String、StringBuffer、StringBuilder的区别？
+###### String、StringBuffer、StringBuilder的区别？
 
+![xu](Java基础/xu.jpg)
 
 ## JDK1.7和JDK1.8有哪些区别？      
+
+```c++
+#include <bits/stdc++.h>
+int main(){
+   cout<<21<<endl;
+}
+```
+
+```c
+#include <bits/stdc++.h>
+int main(){
+   printf("jd");
+}
+```
+
+
+
+
+```shell
+docker run -p 3306:3306 --name mysql \
+-v /mydata/mysql/log:/var/log/mysql \
+-v /mydata/mysql/data:/var/lib/mysql \
+-v /mydata/mysql/conf:/etc/mysql \
+-e MYSQL_ROOT_PASSWORD=root \
+-d mysql:5.7
+```
+
+````sql
+SELECT * FROM Customers;
+````
 
 
 

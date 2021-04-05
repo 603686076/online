@@ -7,20 +7,56 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <link rel="stylesheet" href="prism.css">
 </head>
 <body>
   <div id="app"></div>
+  <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
   <script>
     window.$docsify = {
-      name: '',
-      repo: '',
+      name: 'online',
+      repo: 'https://github.com/xu-214/online',
       coverpage: true,
       loadNavbar: true,
       loadSidebar: true,
-      subMaxLevel: 3
+      // maxLevel: 5,//最大支持渲染的标题层级
+      subMaxLevel: 3,//设置生成目录的最大层级
+      externalLinkTarget: '_blank',//外链打开方式
+      search: 'auto', // 默认值
+      // logo: '/_media/xu.jpg',//侧边栏logo, 配合name: 'xu'使用。
+      name: 'xu',
+      // themeColor: '#2eb4e0', //主题颜色
+      autoHeader: true,
+      plugins: [
+        EditOnGithubPlugin.create('https://github.com/xu-214/online/tree/main/docs/'),
+    ],
+    search : [
+      '/', 
+      '/ms/',         
+      '/ms/Java基础',
+      '/ms/Java并发',   
+      '/ms/JVM', 
+      '/ms/MySQL', 
+      '/ms/计算机网络', 
+      '/ms/计算机操作系统',  
+      '/ms/Spring全家桶',      
+      '/ms/其他',          
+      '/project/',    
+    ],
+    search: {
+      placeholder: '搜索',
+       // 搜索标题的最大层级, 1 - 6
+       depth: 3,
+    }
     }
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-c.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-java.min.js"></script>
+  <script src="/prism.js" async></script>
+  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
 </body>
 </html>

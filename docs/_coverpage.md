@@ -1,4 +1,4 @@
-![logo](_medias/xu.jpg)
+![logo](_media/xu.jpg)
 
 # 个人站点
 
@@ -8,5 +8,10 @@
 * UI类库：Mint-UI、Vant
 * 后端数据接口：Express、MongoDB
 
-[GitHub](https://github.com/Hanxueqing/Douban-Movie.git)
-[Get Started](#Home)
+[GitHub](https://github.com/xu-214/online)
+[Get Started](ms/)
+
+<!-- 背景图 -->
+<!-- ![](_media/xu.jpg) -->
+<!-- 背景色 -->
+![color](#bcffb3)
