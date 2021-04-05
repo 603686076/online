@@ -1,11 +1,5 @@
 ## String、StringBuffer、StringBuilder的区别？     
 
-### String、StringBuffer、StringBuilder的区别？   
-### String、StringBuffer、StringBuilder的区别？   
-#### String、StringBuffer、StringBuilder的区别？   
-##### String、StringBuffer、StringBuilder的区别？
-###### String、StringBuffer、StringBuilder的区别？
-
 ![xu](Java基础/xu.jpg)
 
 ## JDK1.7和JDK1.8有哪些区别？      
