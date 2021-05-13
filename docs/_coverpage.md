@@ -9,7 +9,7 @@
 * 仅供自己参考
 
 [GitHub](https://github.com/xu-214/online)
-[Get Started](ms/)
+[Get Started](面试/)
 
 <!-- 背景图 -->
 <!-- ![](_media/xu.jpg) -->
