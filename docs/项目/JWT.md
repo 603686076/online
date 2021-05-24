@@ -383,3 +383,9 @@ controller层通过注解`@RequestHeader(value = USER_NAME)`，会调用重写�
 
 这样就实现了客户端通过get方法在请求头里携带`Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJ1c2VyTmFtZSI6Inh1IiwiZXhwIjoxNjI1MzY5MjUwfQ.V6SyqTrItIZZx0PBzdJ0zIjHstDZHBknFlC0P1GH_r6rK8hlZY3rLFn7hNwTzwWj9Q90R-cT63g2Zzj0AsTgjg`这个token，后端就可以通过这个token解析出来用户名。
 
+
+
+**简而言之**
+
+需要身份认证的请求会被后端的`JwtAuthenticationFilter`拦截，它会更改请求。首先会检查请求头里的token，有token的话对token进行解析，解析出来曾经的加密对象 `userName -> xu`，再通过这个加密对象对原请求进行更改，令原请求`request` = 新创建的 `Http Servlet` 请求，达到修改的目的。新请求会重写 `getHeaders(String name)`方法，这样`UmsUserController`就能通过`@RequestHeader(value = USER_NAME)`注解的方式调用`request`的方法，我们刚刚对这个请求的 `getHeaders(String name)`方法进行了更改，则会调用我们重写的方法从而获取到用户名`xu`。于是就实现了从前端发来的请求体里的token中解析出用户名，进而进行下一步的操作。
+
